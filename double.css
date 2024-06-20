@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  font-family: cursive;
+}
+
+h1 {
+  font-size: 100px;
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0.3);
+  letter-spacing: 4px;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  padding: 10px 40px;
+  font-size: 25px;
+  border: 4px solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s background-color;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.split {
+  width: 50%;
+  height: 100%;
+  top: 0;
+  overflow: hidden;
+}
+
+.split.left {
+  position: absolute;
+  left: 0;
+  background-color: pink;
+  background-image: url("https://econtent.o2.co.uk/o/econtent/media/get/43f82c83-69ec-480d-82b5-3fef330f2a0b");
+  background-size: cover;
+}
+
+.split.right {
+  position: absolute;
+  right: 0;
+  background-color: rgb(200, 250, 2);
+  background-image: url("https://ss7.vzw.com/is/image/VerizonWireless/samsung-galaxy-a23-5g-uw-sma-236vzkv?wid=465&hei=465&fmt=webp");
+  background-size: cover;
+}
+
+.active-left .left {
+  width: 75%;
+}
+
+.active-left .right {
+  width: 25%;
+}
+
+.active-right .left {
+  width: 25%;
+}
+
+.active-right .right {
+  width: 75%;
+}
+
+.left,
+.right {
+  transition: width 2s ease-in-out;
+}
